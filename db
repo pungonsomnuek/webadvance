@@ -1,0 +1,32 @@
+1.db_manage_takumi         /            utf8_general_ci
+'tablename'   tb_position      4 colum
+position_id        int       2        nullindex ถูก        รหัส
+position_name_thai     varchar      100                   ชื่อภาษไทย
+position_name_eng      varchar      100                   ชื่อภาษาอังกิต
+position_task_detail   varchar      1000                  อธิบายหน้าที่
+
+table comment ตารางข้อมูล
+colation        utf8_general_ci
+
+step2
+
+db_manage_takumi  
+เเผนก
+tb_department   
+department_id      int       2        nullindex ถูก        รหัส
+department_name_thai    varchar      100
+department_name_eng     varchar       100
+department_detail       text           1000
+table comment ตารางข้อมูลเเผนก    colation        utf8_general_ci
+
+step3
+
+tb_employee      colum6
+
+employee_id    int       5        รหัสผนักงาน
+employee_fullname varchar  100    ชื่อนามสกุล
+employee_salary    float   7      เงินเดือน
+employee_age       int     2       อายุ
+position_id_fk     int     2       รหัสตำเเหน่ง   คีย์นอก fk         nullindex        index
+department_id_fk   int     2      รหัสเเผนก     คีย์นอก              nullindex        index
+table comment ตารางข้อมูลพนักงาน      utf8_general_ci
